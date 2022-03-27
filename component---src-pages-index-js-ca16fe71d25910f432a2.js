@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[678],{558:function(t,e,r){r.r(e),r.d(e,{default:function(){return n}});var l=r(294);function n(){return l.createElement("div",null,l.createElement("script",null,'window.location.replace("https://www.instagram.com/adirolfskateboarding/")'))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-ca16fe71d25910f432a2.js.map

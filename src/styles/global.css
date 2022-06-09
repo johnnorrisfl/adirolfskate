@@ -7,8 +7,19 @@
     src: url("../fonts/Merriweather/Merriweather-Regular.ttf"),
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf"),
+}
+
 @layer base {
     body {
-        background-color: theme('colors.slate.500');
     }
+}
+
+.theme-adirolf {
+    --color-navy: 20 63 107;
+    --color-red: 245 83 83;
+    --color-orange: 254 177 57;
+    --color-yellow: 246 245 77;
 }

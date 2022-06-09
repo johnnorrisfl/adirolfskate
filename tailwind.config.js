@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -7,6 +9,16 @@ module.exports = {
       },
       fontFamily: {
         merriweather: ["Merriweather", "serif"],
+        serif: ["Merriweather", ...defaultTheme.fontFamily.serif],
+        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        "adirolf-orange": {
+          DEFAULT: "#FEB139",
+        },
+        "adirolf-blue": {
+          DEFAULT: "#143F6B",
+        },
       },
     },
   },

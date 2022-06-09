@@ -1,18 +1,10 @@
 import React from "react"
 
 const Banner = () => (
-  <section>
-    <header className="prose">
-      <h1 className="text-center text-slate-900/80 drop-shadow-sm">
-        Building skateboard
-        <br /> community
-      </h1>
-      <p>
-        We believe skateboarding builds character in youth of all backgrounds
-        through competition and connection. Adirolf dedicates itself to
-        producing youth skate events all over Florida.
-      </p>
-    </header>
+  <section
+    className={`filter blur-[.5px] bg-[url('https://d1k5l1t2ld94t6.cloudfront.net/krys-amon-EVwuoMy19JU-unsplash+cropped+4.png')] bg-center bg-[right_bottom_2rem] bg-cover bg-no-repeat h-80`}
+  >
+    <div className=""></div>
   </section>
 )
 

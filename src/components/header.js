@@ -1,19 +1,29 @@
-import React from "react"
-import Navigation from "./navigation"
+import React, { useState } from "react"
 import Img from "./img"
+import NavButton from "./nav-button"
+import NavLinks from "./nav-links"
 
 const Header = ({ ...props }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
-    <div className="mb-8">
-      <div className="w-full h-[200px] relative">
+    <header>
+      <div className="flex justify-between">
         <Img
-          className="w-full h-full object-contain mix-blend-multiply relative"
-          src="/skyline.png"
-          alt="Jacksonville skyline"
+          alt="Adirolf Skateboarding"
+          className="w-56 fill-blue-900"
+          src="/Adirolf Logo Component.svg"
         ></Img>
+        <NavButton
+          isOpen={isOpen}
+          onClick={() => {
+            console.log("Executing click")
+            setIsOpen(!isOpen)
+          }}
+        />
       </div>
-      <Navigation />
-    </div>
+      <NavLinks isOpen={isOpen}></NavLinks>
+    </header>
   )
 }
 

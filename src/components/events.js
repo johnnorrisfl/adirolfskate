@@ -15,7 +15,7 @@ const Events = () => {
         rel="noreferrer"
       >
         <Img
-          className="shadow-md shadow-slate-400/50 mt-3"
+          className="mt-3 shadow-md shadow-slate-400/50"
           src="/emerson.jpg"
           alt="Emerson Skateboard contest Saturday April 9th 2022"
         ></Img>

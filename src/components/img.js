@@ -7,7 +7,13 @@ const Img = ({ src, alt, ...props }) => {
     ? `${process.env.IMG_PATH}${src}`
     : src
   const cleaned = qualifiedSrc.replace(regex, "/")
-  return <img className={props?.["class"]} src={cleaned} alt={alt} />
+  return (
+    <img
+      className={props?.["class"] ?? props?.["className"]}
+      src={cleaned}
+      alt={alt}
+    />
+  )
 }
 
 export default Img

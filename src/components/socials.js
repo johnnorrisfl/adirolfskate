@@ -12,7 +12,7 @@ const Socials = () => {
 
       <ul
         id="socials"
-        class="flex flex-col xs:flex-row list-none not-prose flex-wrap justify-start content-start pl-0 space-y-4 xs:space-y-0 xs:space-x-4 mt-2"
+        class="flex flex-col flex-wrap content-start justify-start pl-0 mt-2 list-none xs:flex-row not-prose space-y-4 xs:space-y-0 xs:space-x-4"
       >
         <li class="flex-none">
           <a

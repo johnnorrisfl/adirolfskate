@@ -1,5 +1,4 @@
 import React from "react"
-import Subheader from "./subheader"
 import Img from "./img"
 
 const Socials = () => {

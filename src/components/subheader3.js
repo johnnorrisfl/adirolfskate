@@ -1,7 +1,7 @@
 import React from "react"
 
-const Subheader = ({ children }) => (
+const Subheader3 = ({ children }) => (
   <span className="prose prose-xl">{children}</span>
 )
 
-export default Subheader
+export default Subheader3

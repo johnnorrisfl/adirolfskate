@@ -1,6 +1,5 @@
 import React from "react"
 import Subheader from "./subheader"
-import Subheader3 from "./subheader3"
 import Img from "./img"
 
 const Events = () => {
@@ -10,7 +9,7 @@ const Events = () => {
       className="text-slate-900 prose pt-6 flex flex-col space-y-8"
     >
       <div>
-        <Subheader3>Next Event</Subheader3>
+        <Subheader>Next Event</Subheader>
         <Img
           className="shadow-md shadow-slate-400/50"
           src="/Baldwin Contest.jpg"
@@ -38,7 +37,7 @@ const Events = () => {
         </div>
       </div>
       <div>
-        <Subheader3>Previous Events</Subheader3>
+        <Subheader>Previous Events</Subheader>
         <a
           target="_blank"
           href="https://www.facebook.com/events/518183559656227/?ref=newsfeed"

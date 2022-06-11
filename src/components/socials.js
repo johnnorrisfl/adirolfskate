@@ -6,7 +6,6 @@ const Socials = () => {
   return (
     <section id="socials">
       <header class="prose">
-        <Subheader>Socials</Subheader>
         <p class="">Follow us on the socials.</p>
       </header>
 

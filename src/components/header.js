@@ -7,13 +7,15 @@ const Header = ({ ...props }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header>
+    <header className="sticky top-0 z-50 bg-white shadow-lg">
       <div className="flex justify-between">
-        <Img
-          alt="Adirolf Skateboarding"
-          className="w-56 fill-blue-900"
-          src="/Adirolf Logo Component.svg"
-        ></Img>
+        <a href="/">
+          <Img
+            alt="Adirolf Skateboarding"
+            className="w-56 fill-blue-900"
+            src="/Adirolf Logo Component.svg"
+          ></Img>
+        </a>
         <NavButton
           isOpen={isOpen}
           onClick={() => {
@@ -22,7 +24,10 @@ const Header = ({ ...props }) => {
           }}
         />
       </div>
-      <NavLinks isOpen={isOpen}></NavLinks>
+      <NavLinks
+        isOpen={isOpen}
+        onClickLink={() => setIsOpen(!isOpen)}
+      ></NavLinks>
     </header>
   )
 }

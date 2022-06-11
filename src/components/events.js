@@ -1,27 +1,28 @@
 import React from "react"
 import Subheader from "./subheader"
+import Subheader3 from "./subheader3"
 import Img from "./img"
 
 const Events = () => {
   return (
-    <section id="events" class="text-slate-900/80">
-      <header className="prose">
-        <Subheader>Events</Subheader>
-      </header>
-      <h3 class="my-2">Next Event</h3>
-      <Img
-        className="shadow-md shadow-slate-400/50 mt-3"
-        src="/Baldwin Contest.jpg"
-        alt="Emerson Skateboard contest Saturday April 9th 2022"
-      ></Img>
-      <div className="flex justify-start gap-x-1 mt-4">
-        <dt class="flex flex-initial w-20">Date</dt>
-        <dd class="text-slate-900 font-semibold">Saturday June 11th, 2022</dd>
-      </div>
-      <div className="flex justify-start gap-x-1 mt-4">
-        <dt class="flex flex-initial w-20">Location</dt>
-        <dd class="text-slate-900 font-semibold">
-          <p>
+    <section
+      id="events"
+      className="text-slate-900 prose pt-6 flex flex-col space-y-8"
+    >
+      <div>
+        <Subheader3>Next Event</Subheader3>
+        <Img
+          className="shadow-md shadow-slate-400/50"
+          src="/Baldwin Contest.jpg"
+          alt="Emerson Skateboard contest Saturday April 9th 2022"
+        ></Img>
+        <div className="flex justify-start gap-x-1">
+          <dt class="flex flex-initial w-20">Date</dt>
+          <dd class="text-slate-900 font-semibold">Saturday June 11th, 2022</dd>
+        </div>
+        <div className="flex justify-start gap-x-1 mt-2">
+          <dt class="flex flex-initial w-20">Location</dt>
+          <dd class="text-slate-900 font-semibold">
             850 Center St N
             <br />
             Jacksonville, FL 32234
@@ -33,22 +34,23 @@ const Events = () => {
             >
               map
             </a>
-          </p>
-        </dd>
+          </dd>
+        </div>
       </div>
-
-      <h3 class="mt-4 mb-2">Past Event</h3>
-      <a
-        target="_blank"
-        href="https://www.facebook.com/events/518183559656227/?ref=newsfeed"
-        rel="noreferrer"
-      >
-        <Img
-          className="mt-3 shadow-md shadow-slate-400/50"
-          src="/emerson.jpg"
-          alt="Emerson Skateboard contest Saturday April 9th 2022"
-        ></Img>
-      </a>
+      <div>
+        <Subheader3>Previous Events</Subheader3>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/events/518183559656227/?ref=newsfeed"
+          rel="noreferrer"
+        >
+          <Img
+            className="shadow-md shadow-slate-400/50"
+            src="/emerson.jpg"
+            alt="Emerson Skateboard contest Saturday April 9th 2022"
+          ></Img>
+        </a>
+      </div>
     </section>
   )
 }

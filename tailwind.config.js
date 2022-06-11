@@ -19,6 +19,9 @@ module.exports = {
         "adirolf-blue": {
           DEFAULT: "#143F6B",
         },
+        "adirolf-yellow": {
+          DEFAULT: "#F6F54D",
+        },
       },
     },
   },

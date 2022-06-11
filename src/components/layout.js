@@ -1,11 +1,12 @@
 import React from "react"
 import Helmet from "react-helmet"
 import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex justify-center ">
-      <div className="max-w-md min-w-[325px] p-2">
+    <div className="flex justify-center bg-slate-50 ">
+      <div className="max-w-md min-w-[325px] bg-white shadow-sm">
         <Helmet>
           <meta
             name="keywords"
@@ -18,7 +19,8 @@ const Layout = ({ children }) => {
           />
         </Helmet>
         <Header></Header>
-        {children}
+        <div class="flex flex-col space-y-6 px-[1rem]">{children}</div>
+        <Footer />
       </div>
     </div>
   )

@@ -17,12 +17,6 @@ const Layout = ({ children }) => {
               "skateboarding lessons",
             ].join(", ")}`}
           />
-
-          <meta property="og:title" content="Adirolf Skateboarding" />
-          <meta
-            property="og:description"
-            content="A youth skateboard league building skateboard community"
-          />
           <meta
             property="og:image"
             content="https://d1k5l1t2ld94t6.cloudfront.net/krys-amon-EVwuoMy19JU-unsplash+cropped+4.png"

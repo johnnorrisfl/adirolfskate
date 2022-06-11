@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Adirolf Skateboarding",
-    description: "",
+    description: "A youth skateboard league building skateboard community",
     author: "",
     siteUrl: `https://adirolfskate.com`,
   },

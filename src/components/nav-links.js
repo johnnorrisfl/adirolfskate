@@ -1,6 +1,6 @@
 import React from "react"
 
-const NavLinks = ({ isOpen, onClickLink }) => {
+const NavLinks = ({ isOpen }) => {
   return (
     <div
       className={`overflow-hidden transition-[height] ease-in-out duration-400 ${

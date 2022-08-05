@@ -8,7 +8,7 @@ export default function Scores() {
     <>
       <Seo title="Scoring" />
       <Layout>
-        <div className="h-screen">
+        <div className="h-screen w-full">
           <iframe
             title="Scoring"
             src="https://www.theboardrscores.com/jumbotronpublic/TWuDhq67ats888RCe"

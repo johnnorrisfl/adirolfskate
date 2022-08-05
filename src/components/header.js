@@ -24,10 +24,7 @@ const Header = ({ ...props }) => {
           }}
         />
       </div>
-      <NavLinks
-        isOpen={isOpen}
-        onClickLink={() => setIsOpen(!isOpen)}
-      ></NavLinks>
+      <NavLinks isOpen={isOpen}></NavLinks>
     </header>
   )
 }

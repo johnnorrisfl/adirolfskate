@@ -1,43 +1,43 @@
 import React from "react"
 import Subheader from "./subheader"
 import Img from "./img"
+import EventCard from "./event-card"
 
 const Events = () => {
   return (
     <section
       id="events"
-      className="text-slate-900 prose pt-6 flex flex-col space-y-8"
+      className="flex flex-col pt-6 space-y-8 prose text-slate-900"
     >
       <div>
         <Subheader>Next Event</Subheader>
-        <Img
-          className="shadow-md shadow-slate-400/50"
-          src="/Baldwin Contest.jpg"
-          alt="Emerson Skateboard contest Saturday April 9th 2022"
-        ></Img>
-        <div className="flex justify-start gap-x-1">
-          <dt class="flex flex-initial w-20">Date</dt>
-          <dd class="text-slate-900 font-semibold">Saturday June 11th, 2022</dd>
-        </div>
-        <div className="flex justify-start gap-x-1 mt-2">
-          <dt class="flex flex-initial w-20">Location</dt>
-          <dd class="text-slate-900 font-semibold">
-            850 Center St N
-            <br />
-            Jacksonville, FL 32234
-            <br />
-            <a
-              target={"_blank"}
-              href="https://duckduckgo.com/?q=baldwin+skatepark+address&atb=v320-1&ia=web&iaxm=places"
-              rel="noreferrer"
-            >
-              map
-            </a>
-          </dd>
-        </div>
+        <EventCard
+          location={{
+            street: "186 Veterans Pkwy",
+            cityStateZip: "St Johns, FL 32259",
+          }}
+          date={"Saturday August 6th, 2022"}
+          imgUrl={
+            "/Veterans 293069574_1594533060949278_134931932935797447_n.jpg"
+          }
+          alt="Veterans Skatepark contest Saturday August 6th 2022"
+          mapUrl={"https://goo.gl/maps/HfmLEfBr2j2S4Sg68"}
+        />
       </div>
       <div>
         <Subheader>Previous Events</Subheader>
+        <EventCard
+          location={{
+            street: "850 Center St N",
+            cityStateZip: "Jacksonville, FL 32234",
+          }}
+          date={"Saturday June 11th, 2022"}
+          imgUrl={"/Baldwin Contest.jpg"}
+          alt="Emerson Skateboard contest Saturday April 9th 2022"
+          mapUrl={
+            "https://duckduckgo.com/?q=baldwin+skatepark+address&atb=v320-1&ia=web&iaxm=places"
+          }
+        />
         <a
           target="_blank"
           href="https://www.facebook.com/events/518183559656227/?ref=newsfeed"
